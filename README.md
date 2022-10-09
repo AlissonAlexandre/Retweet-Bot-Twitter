@@ -4,8 +4,8 @@
  Você pode checar o funcionamento do bot procurando o usuário @BotCouve no Twitter!
 
 ## Bibliotecas necessárias
-dotenv, tweepy
-> pip install dotenv tweepy
+python-dotenv, tweepy
+> pip install python-dotenv tweepy
 
 ## Como configurar as variáveis de ambiente
 ### Criar uma conta de Developer no portal do Twitter
