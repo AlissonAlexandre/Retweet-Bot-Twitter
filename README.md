@@ -10,7 +10,7 @@ dotenv, tweepy
 > [Portal de desenvolvedor do Twitter](https://developer.twitter.com/en/portal/ "Twitter Developer Portal")
 
 Clicar em Create Project na Dashboard
-![Create Project](https://user-images.githubusercontent.com/93171892/194770381-9b4bcb0d-134e-48a6-9a64-084f9ccfac64.png =250x250)
+![Create Project](https://user-images.githubusercontent.com/93171892/194770658-bed77db7-eecd-4775-a411-18a2f391f1fc.png)
 
 Preencher a descrição do projeto e selecionar o Use Case como "Making a Bot", depois selecionar App Environment como Development.
 Logo após, já com seu aplicativo já selecionado, clique em set up, na aba "User authentication settings".
