@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 import tweepy
 from time import sleep
-from IPython.display import display
+
 load_dotenv()
 
 API_KEY = os.getenv('API_KEY')
