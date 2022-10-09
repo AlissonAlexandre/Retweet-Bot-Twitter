@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 import tweepy
 from time import sleep
-
+from IPython.display import display
 load_dotenv()
 
 API_KEY = os.getenv('API_KEY')
@@ -31,8 +31,7 @@ class ClassStream(tweepy.StreamingClient):
             print(error)
 
 stream = ClassStream(bearer_token=BEARER_TOKEN)
-regra = tweepy.StreamRule("couve -is:retweet -is:quote")
+regra = tweepy.StreamRule("couve -is:retweet -is:quote -is:reply")
 stream.add_rules(regra, dry_run=False)
-
 print("Stream rodando!")
 stream.filter(tweet_fields=['author_id', 'edit_history_tweet_ids', 'id', 'text'])
