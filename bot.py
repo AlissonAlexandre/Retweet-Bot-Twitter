@@ -21,7 +21,7 @@ api = tweepy.API(auth)
 
 
 class ClassStream(tweepy.StreamingClient):
-    def on_tweet(selft, tweet):
+    def on_tweet(self, tweet):
         print(tweet.text)
         try:
             client.retweet(tweet.id)
@@ -32,7 +32,8 @@ class ClassStream(tweepy.StreamingClient):
             print(error)
 
 stream = ClassStream(bearer_token=BEARER_TOKEN)
-regra = tweepy.StreamRule("couve")
-stream.add_rules(regra, dry_run=True)
+regra = tweepy.StreamRule("couve -is:retweet -is:reply -is:quote")
+stream.add_rules(regra, dry_run=False)
+
 print("Stream rodando!")
 stream.filter()
