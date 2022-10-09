@@ -22,6 +22,7 @@ api = tweepy.API(auth)
 
 class ClassStream(tweepy.StreamingClient):
     def on_tweet(selft, tweet):
+        print(tweet.text)
         try:
             client.retweet(tweet.id)
         except tweepy.errors.TooManyRequests as tooManyResquests:
