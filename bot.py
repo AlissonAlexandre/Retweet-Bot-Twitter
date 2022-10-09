@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 import tweepy
 from time import sleep
+from IPython.display import display
 
 load_dotenv()
 
@@ -22,7 +23,8 @@ api = tweepy.API(auth)
 
 class ClassStream(tweepy.StreamingClient):
     def on_tweet(self, tweet):
-        print(tweet.text)
+        user = client.get_user(id = tweet.author_id)
+        print("@"+ str(user.data) + " --- "  + tweet.text)
         try:
             client.retweet(tweet.id)
         except tweepy.errors.TooManyRequests as tooManyResquests:
@@ -36,4 +38,4 @@ regra = tweepy.StreamRule("couve -is:retweet -is:reply -is:quote")
 stream.add_rules(regra, dry_run=False)
 
 print("Stream rodando!")
-stream.filter()
+stream.filter(tweet_fields=['author_id', 'edit_history_tweet_ids', 'id', 'text'])
