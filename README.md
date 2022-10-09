@@ -1,5 +1,6 @@
 # Bot Twitter
- Bot de Twitter criado para dar "RTs" em alguma palavra específica, nesse caso "couve"
+ Bot de Twitter criado para dar "RTs" em alguma palavra específica, nesse caso "couve".
+ Você pode checar o funcionamento do bot procurando o usuário @BotCouve no Twitter!
 
 ## Bibliotecas necessárias
 dotenv, tweepy
