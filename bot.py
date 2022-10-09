@@ -23,8 +23,9 @@ class ClassStream(tweepy.StreamingClient):
         print("@"+ str(user.data) + " --- "  + tweet.text)
         try:
             client.retweet(tweet.id)
-        except tweepy.errors.TooManyRequests as tooManyResquests:
-            print("Parando o bot durante 30 segundo devido a excessivas requisições!")
+        except tweepy.errors.TooManyRequests as tooManyRequests:
+            print("Parando o bot durante 30 segundos devido a excessivas requisições!")
+            print(tooManyRequests)
             sleep(30)
         except Exception as error:
             print(error)
