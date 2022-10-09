@@ -9,8 +9,11 @@ dotenv, tweepy
 ### Criar uma conta de Developer no portal do Twitter
 > [Portal de desenvolvedor do Twitter](https://developer.twitter.com/en/portal/ "Twitter Developer Portal")
 
+<p align="center">
 Clicar em Create Project na Dashboard
+
 ![Create Project](https://user-images.githubusercontent.com/93171892/194770381-9b4bcb0d-134e-48a6-9a64-084f9ccfac64.png)
+</p>
 
 Preencher a descrição do projeto e selecionar o Use Case como "Making a Bot", depois selecionar App Environment como Development.
 Logo após, já com seu aplicativo já selecionado, clique em set up, na aba "User authentication settings".
@@ -19,6 +22,7 @@ Selecionar a opção "Read and write and Direct message" ou "Read and write" em 
 Em App Info colocar o campo "Callback URI / Redirect URL" como "https://localhost/" e o campo "Website URL" como qualquer website fictício, já que nosso bot não terá nenhum.
 
 Depois disso voltar no aplicativo na Dashboard e clicar em regenerate na API Key and Secret, Bearer Token, Access Token and Secret e guardar esses valores em um arquivo .env, como mostrado na foto abaixo.
+
 ![Arquivo .env](https://user-images.githubusercontent.com/93171892/194770289-2ed7aed9-1d11-4bec-8c6c-9356c3a05db7.png)
 
 ## Trocando a palavra chave de pesquisa, e os parâmetros
