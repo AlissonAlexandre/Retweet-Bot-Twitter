@@ -9,9 +9,8 @@ dotenv, tweepy
 ### Criar uma conta de Developer no portal do Twitter
 > [Portal de desenvolvedor do Twitter](https://developer.twitter.com/en/portal/ "Twitter Developer Portal")
 
-<p align="center">
 Clicar em Create Project na Dashboard
-
+<p align="center">
 ![Create Project](https://user-images.githubusercontent.com/93171892/194770381-9b4bcb0d-134e-48a6-9a64-084f9ccfac64.png)
 </p>
 
