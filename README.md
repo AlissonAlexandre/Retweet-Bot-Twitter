@@ -11,7 +11,7 @@ dotenv, tweepy
 
 Clicar em Create Project na Dashboard
 <p align="center">
-![Create Project](https://user-images.githubusercontent.com/93171892/194770381-9b4bcb0d-134e-48a6-9a64-084f9ccfac64.png)
+<img src="https://user-images.githubusercontent.com/93171892/194770381-9b4bcb0d-134e-48a6-9a64-084f9ccfac64.png" alt="Create Project"/>
 </p>
 
 Preencher a descrição do projeto e selecionar o Use Case como "Making a Bot", depois selecionar App Environment como Development.
