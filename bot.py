@@ -33,6 +33,7 @@ class ClassStream(tweepy.StreamingClient):
 stream = ClassStream(bearer_token=BEARER_TOKEN)
 regra = tweepy.StreamRule("couve -is:retweet -is:quote -is:reply")
 stream.add_rules(regra, dry_run=False)
+stream.delete_rules('1579154815590055936')
 print(stream.get_rules())
 print("Stream rodando!")
 stream.filter(tweet_fields=['author_id', 'edit_history_tweet_ids', 'id', 'text'])
